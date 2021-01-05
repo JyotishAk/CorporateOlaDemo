@@ -4,6 +4,7 @@ Feature: Corporate Ola Cabs Login screen
     Given User Navigates to the Corporate Ola Cabs URL
 
   Scenario Outline: Verfiy if the Name field allows only 100 characters
+    Then User click on contact Info
     When User Enters "<name>" in the Name field
     Then Verify if Name field allows only 100 characters by comparing with "<name>"
 
